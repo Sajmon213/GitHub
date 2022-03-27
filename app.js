@@ -30,4 +30,17 @@ const canBueAlcogol = birthNow => {
     return isPersonal;
 }
 console.log(canBueAlcogol(1985));
-outputInner.innerHTML=canBueAlcogol(2022);
+outputInner.innerHTML = canBueAlcogol(2022);
+
+// function % bills
+
+const inPrice = (item) => item < 20 ? item * 0.2 : item * 0.15;
+const carrentArray = [11, 20, 47];
+const tips = [inPrice(carrentArray[0]), inPrice(carrentArray[1]), inPrice(carrentArray[2])];
+
+const globalArray = inPrice(carrentArray[0]) + inPrice(carrentArray[1]) + inPrice(carrentArray[2]);
+const totalBills = [carrentArray[0]+tips[0], carrentArray[1]+tips[1], carrentArray[2]+tips[2]];
+
+console.log(tips);
+
+console.log(totalBills);
