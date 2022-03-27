@@ -29,8 +29,8 @@ const canBueAlcogol = birthNow => {
     const isPersonal = age >= 21 ? 'Buhai' : 'Oh my God Fack';
     return isPersonal;
 }
-console.log(canBueAlcogol(2021));
-outputInner.innerHTML = canBueAlcogol(2022);
+console.log(canBueAlcogol(2010));
+outputInner.innerHTML = canBueAlcogol(1985);
 
 // function % bills
 
